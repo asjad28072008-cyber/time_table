@@ -24,18 +24,23 @@ Execute the program using runserver command.
 
 # PROGRAM
 ```
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    </head>
-    <body  style=" background-image:linear-gradient(rgba(1,1,1,0.5),rgba(1,1,1,0.5)), url('/static/image2ofsaveetha.jpg');
+</head>
+    {% load static %}
+    <body  style=" background-image:linear-gradient(rgba(1,1,1,0.5),rgba(1,1,1,0.5)), url({% static 'image2ofsaveetha.jpg' %});
   background-repeat:repeat;
   background-size:inherit;
   background-position: center;">
-        <img style="position: relative; width: 80vw; height: 20vh; margin-left:11vw; margin-right:auto;" src="\static\images-savetha.png" alt="saveetha college"/>
+        <img style="position: relative; width: 80vw; height: 20vh; margin-left:11vw; margin-right:auto;" src="{% static 'images-savetha.png' %}" alt="saveetha college" />
         <div>
             
-        <table bgcolor="cyan" style="margin-top:5vh; margin-left:15vw; width:0rem; height:5px;" cellspacing="3" cellpadding="10" border="10" >
+        <table bgcolor="cyan" style="margin-top:5vh; margin-left:30vw; width:0rem; height:5px;" cellspacing="3" cellpadding="10" border="10" >
            <caption style="color:#12edcfff; font-size :30px; font-weight:bold; margin-bottom:1vw; text-decoration:underline;">SLOT TIME TABLE - MUHAMMAD ASJAD E</caption>
             <tr>
                 <th bgcolor="yellow">Day/Time</th>
@@ -89,7 +94,7 @@ Execute the program using runserver command.
         </table>
         </div>
         <div>
-            <table bgcolor="#afcdeff" cellspacing="3" cellpadding="10" border="10" style="margin-left: 25vw; margin-top:5vh">
+            <table bgcolor="#afcdeff" cellspacing="3" cellpadding="10" border="10" style="margin-left: 35vw; margin-top:5vh">
                 <tr>
                     <th>S.NO</th>
                     <th>SUBJECT CODE</th>
@@ -119,8 +124,7 @@ Execute the program using runserver command.
 
 
 # OUTPUT
-![alt text](<Screenshot (12).png>)
-![alt text](<Screenshot (13).png>)
+![alt text](<Screenshot 2025-09-30 084100.png>)
 
 # RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
